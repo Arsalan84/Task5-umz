@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #353535;
+        }
+        .container {
+            width: 65%;
+            margin: 0;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.514);
+        }
+        .profile-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .name-section {
+            background-color: white;
+            color: black;
+        }
+        .email-section {
+            background-color: white;
+            color: black;
+        }
+        .phone-section {
+            background-color: white;
+            color: black;
+        }
+        .summary-section {
+            background-color: white;
+            color: black;
+        }
+        .skills-section {
+            background-color: white;
+            color: black;
+        }
+        .experience-section {
+            background-color:  white;
+            color: black;
+        }
+        .education-section {
+            background-color: white;
+            color: black;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        strong {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section name-section">
+            <p><strong>Name:</strong>{{ profile.name }}</p>
+        </div>
+        <div class="profile-section email-section">
+            <p><strong>Email:</strong> {{ profile.email }}</p>
+        </div>
+        <div class="profile-section phone-section">
+            <p><strong>Phone:</strong> {{ profile.phone }}</p>
+        </div>
+        <div class="profile-section summary-section">
+            <p><strong>Summary:</strong> {{ profile.summary }}</p>
+        </div>
+        <div class="profile-section skills-section">
+            <p><strong>Skills:</strong> {{ profile.skills }}</p>
+        </div>
+        <div class="profile-section experience-section">
+            <p><strong>Experience:</strong> {{ profile.experience }}</p>
+        </div>
+        <div class="profile-section education-section">
+            <p><strong>Education:</strong> {{ profile.education }}</p>
+        </div>
+    </div>
+</body>
+</html>
